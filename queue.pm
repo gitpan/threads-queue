@@ -6,12 +6,12 @@ use warnings;
 
 use threads::shared;
 
-our $VERSION = '0.01';
+our $VERSION = '0.03';
 
 sub new {
     my $class = shift;
     my @self;
-    tie @self, 'threads::shared';
+    share(\@self);
     @self = @_;
     return bless \@self, $class;
 }
@@ -59,7 +59,6 @@ sub pending {
 
 1;
 
-# Below is stub documentation for your module. You better edit it!
 
 =head1 NAME
 
