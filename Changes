@@ -1,0 +1,6 @@
+Revision history for Perl extension threads::queue.
+
+0.01  Mon Jul 23 20:44:29 2001
+	- original version; created by h2xs 1.21 with options
+		--use-new-tests -X -A -n threads::queue
+
